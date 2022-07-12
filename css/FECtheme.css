@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+/*
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-black: #000;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+*/
+    --bs-primary: #001a41;
+    --bs-secondary: #e30613;
+/*
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+*/
+    --bs-light: #e5f0ff;
+    --bs-dark: #393c40;
+    --bs-primary-rgb: 0, 26, 65;
+    --bs-secondary-rgb: 227, 6, 19;
+/*
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+*/
+    --bs-light-rgb: 229, 240, 255;
+    --bs-dark-rgb: 57, 60, 64;
+/*
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+*/
+    --bs-font-sans-serif: Roboto, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: Roboto Mono, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+/*
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #fff;
+    --bs-border-width: 1px;
+    --bs-border-style: solid;
+    --bs-border-color: #dee2e6;
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-border-radius: 0.375rem;
+    --bs-border-radius-sm: 0.25rem;
+    --bs-border-radius-lg: 0.5rem;
+    --bs-border-radius-xl: 1rem;
+    --bs-border-radius-2xl: 2rem;
+    --bs-border-radius-pill: 50rem;
+    --bs-heading-color: ;
+    --bs-link-color: #0d6efd;
+    --bs-link-hover-color: #0a58ca;
+    --bs-code-color: #d63384;
+    --bs-highlight-bg: #fff3cd;
+*/
+  }
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: var(--bs-secondary);
+}
+
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.vh-full {
+    height: calc(100vh - 56px);
+}
+
+.dropdown-menu {
+    background-color: var(--bs-light);
+    border-radius: 0; }
+
+.bg-opacity-90 {
+    --bs-bg-opacity: 0.9; }
+
+.text-white-75 {
+    --bs-text-opacity: 1;
+    color: rgba(255, 255, 255, 0.75) !important; }
+
+.display-7 {
+    font-size: calc(0.75rem + 2vw);
+    font-weight: 300;
+    line-height: 1.2; }
+    @media (min-width: 1400px) {
+        .display-7 {
+        font-size: 2.75rem; } }
+
+.display-8 {
+    font-size: calc(0.75rem + 1.5vw);
+    font-weight: 300;
+    line-height: 1.2; }
+    @media (min-width: 1400px) {
+        .display-8 {
+        font-size: 2.065rem; } }
+
+.text-shadow-1 {
+    text-shadow: calc(.05rem + .1vw) calc(.05rem + .1vw) calc(.05rem + .1vw) #000000; }
+
+.text-shadow-2 {
+    text-shadow: calc(.025rem + .05vw) calc(.025rem + .05vw) calc(.025rem + .05vw) #000000; }
+
+.accordion-button {
+    font-size: inherit;
+    color: var(--bs-primary);
+    padding: inherit;
+    padding: .5rem .75rem;
+    font-weight: bold;
+}
+.accordion-button:focus {
+    color: var(--bs-secondary); }
+
+* {
+    -webkit-border-radius: 0 !important;
+       -moz-border-radius: 0 !important;
+            border-radius: 0 !important;
+  }
