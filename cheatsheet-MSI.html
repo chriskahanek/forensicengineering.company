@@ -8,6 +8,7 @@
         <meta name="generator" content="Hugo 0.98.0"/>
         <title>Cheatsheet · Bootstrap v5.2</title>
         <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/cheatsheet/"/>
+        <link href="css/theme.css" rel="stylesheet" type="text/css"/>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"/> 
         <link href="css/theme.css" rel="stylesheet" type="text/css"/>
         <style>.bd-placeholder-img { font-size: 1.125rem; text-anchor: middle; -webkit-user-select: none; -moz-user-select: none; user-select: none; } @media (min-width: 768px) { .bd-placeholder-img-lg {  font-size: 3.5rem; } } .b-example-divider { height: 3rem; background-color: rgba(0, 0, 0, .1); border: solid rgba(0, 0, 0, .15); border-width: 1px 0; box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15); } .b-example-vr { flex-shrink: 0; width: 1.5rem; height: 100vh; } .bi { vertical-align: -.125em; fill: currentColor; } .nav-scroller { position: relative; z-index: 2; height: 2.75rem; overflow-y: hidden; } .nav-scroller .nav { display: flex; flex-wrap: nowrap; padding-bottom: 1rem; margin-top: -1px; overflow-x: auto; text-align: center; white-space: nowrap; -webkit-overflow-scrolling: touch; }</style>
@@ -15,9 +16,8 @@
     <body class="bg-light">
         <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
             <div class="container-fluid d-flex align-items-center">
-                <h1 class="d-flex align-items-center fs-4 text-white mb-0"> <img src="../../assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="me-3" alt="Bootstrap"/>
-      Cheatsheet </h1>
-                <a href="../../examples/cheatsheet-rtl" class="ms-auto link-light" hreflang="ar">RTL cheatsheet</a>
+                <h1 class="d-flex align-items-center fs-4 text-white mb-0"> <img src="../assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="me-3" alt="Bootstrap"/>
+      Cheatsheet </h1><a href="../examples/cheatsheet-rtl" class="ms-auto link-light" hreflang="ar">RTL cheatsheet</a>
             </div>
         </header>
         <aside class="bd-aside sticky-xl-top text-muted align-self-start mb-3 mb-xl-5 px-2">
@@ -27,75 +27,105 @@
                     <li class="my-2">
                         <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">Contents</button>
                         <ul class="list-unstyled ps-3 collapse" id="contents-collapse">
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#typography">Typography</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#typography">Typography</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#images">Images</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#images">Images</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#tables">Tables</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#tables">Tables</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#figures">Figures</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#figures">Figures</a>
                             </li>
                         </ul>
                     </li>
                     <li class="my-2">
                         <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse">Forms</button>
                         <ul class="list-unstyled ps-3 collapse" id="forms-collapse">
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#overview">Overview</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#overview">Overview</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#disabled-forms">Disabled forms</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#disabled-forms">Disabled forms</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#sizing">Sizing</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#sizing">Sizing</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#input-group">Input group</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#input-group">Input group</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#floating-labels">Floating labels</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#floating-labels">Floating labels</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#validation">Validation</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#validation">Validation</a>
                             </li>
                         </ul>
                     </li>
                     <li class="my-2">
                         <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#components-collapse" aria-controls="components-collapse">Components</button>
                         <ul class="list-unstyled ps-3 collapse" id="components-collapse">
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#accordion">Accordion</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#accordion">Accordion</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#alerts">Alerts</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#alerts">Alerts</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#badge">Badge</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#badge">Badge</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#breadcrumb">Breadcrumb</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#breadcrumb">Breadcrumb</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#buttons">Buttons</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#buttons">Buttons</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#button-group">Button group</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#button-group">Button group</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#card">Card</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#card">Card</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#carousel">Carousel</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#carousel">Carousel</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#dropdowns">Dropdowns</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#dropdowns">Dropdowns</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#list-group">List group</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#list-group">List group</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#modal">Modal</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#modal">Modal</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#navs">Navs</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#navs">Navs</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#navbar">Navbar</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#navbar">Navbar</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#pagination">Pagination</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#pagination">Pagination</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#popovers">Popovers</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#popovers">Popovers</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#progress">Progress</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#progress">Progress</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#scrollspy">Scrollspy</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#scrollspy">Scrollspy</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#spinners">Spinners</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#spinners">Spinners</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#toasts">Toasts</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#toasts">Toasts</a>
                             </li>
-                            <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#tooltips">Tooltips</a>
+                            <li>
+                                <a class="d-inline-flex align-items-center rounded text-decoration-none" href="#tooltips">Tooltips</a>
                             </li>
                         </ul>
                     </li>
@@ -107,8 +137,7 @@
                 <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Contents</h2>
                 <article class="my-3" id="typography">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Typography</h3>
-                        <a class="d-flex align-items-center" href="../../content/typography">Documentation</a>
+                        <h3>Typography</h3><a class="d-flex align-items-center" href="../content/typography">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -194,8 +223,7 @@
                 </article>
                 <article class="my-3" id="images">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Images</h3>
-                        <a class="d-flex align-items-center" href="../../content/images">Documentation</a>
+                        <h3>Images</h3><a class="d-flex align-items-center" href="../content/images">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -220,8 +248,7 @@
                 </article>
                 <article class="my-3" id="tables">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Tables</h3>
-                        <a class="d-flex align-items-center" href="../../content/tables">Documentation</a>
+                        <h3>Tables</h3><a class="d-flex align-items-center" href="../content/tables">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -387,8 +414,7 @@
                 </article>
                 <article class="my-3" id="figures">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Figures</h3>
-                        <a class="d-flex align-items-center" href="../../content/figures">Documentation</a>
+                        <h3>Figures</h3><a class="d-flex align-items-center" href="../content/figures">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -410,8 +436,7 @@
                 <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Forms</h2>
                 <article class="my-3" id="overview">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Overview</h3>
-                        <a class="d-flex align-items-center" href="../../forms/overview">Documentation</a>
+                        <h3>Overview</h3><a class="d-flex align-items-center" href="../forms/overview">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -461,8 +486,7 @@
                 </article>
                 <article class="my-3" id="disabled-forms">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Disabled forms</h3>
-                        <a class="d-flex align-items-center" href="../../forms/overview#disabled-forms">Documentation</a>
+                        <h3>Disabled forms</h3><a class="d-flex align-items-center" href="../forms/overview#disabled-forms">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -519,8 +543,7 @@
                 </article>
                 <article class="my-3" id="sizing">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Sizing</h3>
-                        <a class="d-flex align-items-center" href="../../forms/form-control#sizing">Documentation</a>
+                        <h3>Sizing</h3><a class="d-flex align-items-center" href="../forms/form-control#sizing">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -563,32 +586,25 @@
                 </article>
                 <article class="my-3" id="input-group">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Input group</h3>
-                        <a class="d-flex align-items-center" href="../../forms/input-group">Documentation</a>
+                        <h3>Input group</h3><a class="d-flex align-items-center" href="../forms/input-group">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
                             <div class="bd-example">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1">@</span>
                                     <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
                                 </div>
                                 <div class="input-group mb-3">
-                                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-                                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                                    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"/><span class="input-group-text" id="basic-addon2">@example.com</span>
                                 </div>
                                 <label for="basic-url" class="form-label">Your vanity URL</label>
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                                <div class="input-group mb-3"><span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
                                     <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"/>
                                 </div>
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text">$</span>
-                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"/>
-                                    <span class="input-group-text">.00</span>
+                                <div class="input-group mb-3"><span class="input-group-text">$</span>
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"/><span class="input-group-text">.00</span>
                                 </div>
-                                <div class="input-group">
-                                    <span class="input-group-text">With textarea</span>
+                                <div class="input-group"><span class="input-group-text">With textarea</span>
                                     <textarea class="form-control" aria-label="With textarea"></textarea>
                                 </div>
                             </div>
@@ -597,8 +613,7 @@
                 </article>
                 <article class="my-3" id="floating-labels">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Floating labels</h3>
-                        <a class="d-flex align-items-center" href="../../forms/floating-labels">Documentation</a>
+                        <h3>Floating labels</h3><a class="d-flex align-items-center" href="../forms/floating-labels">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -619,8 +634,7 @@
                 </article>
                 <article class="my-3" id="validation">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Validation</h3>
-                        <a class="d-flex align-items-center" href="../../forms/validation">Documentation</a>
+                        <h3>Validation</h3><a class="d-flex align-items-center" href="../forms/validation">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -642,8 +656,7 @@
                                     </div>
                                     <div class="col-md-4">
                                         <label for="validationServerUsername" class="form-label">Username</label>
-                                        <div class="input-group has-validation">
-                                            <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                                        <div class="input-group has-validation"><span class="input-group-text" id="inputGroupPrepend3">@</span>
                                             <input type="text" class="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3" required/>
                                             <div class="invalid-feedback">
                                                 Please choose a username.
@@ -698,8 +711,7 @@
                 <h2 class="sticky-xl-top fw-bold pt-3 pt-xl-5 pb-2 pb-xl-3">Components</h2>
                 <article class="my-3" id="accordion">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Accordion</h3>
-                        <a class="d-flex align-items-center" href="../../components/accordion">Documentation</a>
+                        <h3>Accordion</h3><a class="d-flex align-items-center" href="../components/accordion">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -710,8 +722,7 @@
                                                 Accordion Item #1
 </button> </h4>
                                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            <div class="accordion-body"><strong>This is the first item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                                             </div>
                                         </div>
                                     </div>
@@ -720,8 +731,7 @@
                                                 Accordion Item #2
 </button> </h4>
                                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            <div class="accordion-body"><strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                                             </div>
                                         </div>
                                     </div>
@@ -730,8 +740,7 @@
                                                 Accordion Item #3
 </button> </h4>
                                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                            <div class="accordion-body"><strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                                             </div>
                                         </div>
                                     </div>
@@ -742,8 +751,7 @@
                 </article>
                 <article class="my-3" id="alerts">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Alerts</h3>
-                        <a class="d-flex align-items-center" href="../../components/alerts">Documentation</a>
+                        <h3>Alerts</h3><a class="d-flex align-items-center" href="../components/alerts">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -796,8 +804,7 @@
                 </article>
                 <article class="my-3" id="badge">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Badge</h3>
-                        <a class="d-flex align-items-center" href="../../components/badge">Documentation</a>
+                        <h3>Badge</h3><a class="d-flex align-items-center" href="../components/badge">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -813,32 +820,25 @@
                             </div>
                         </div>
                         <div class="bd-example-snippet bd-code-snippet">
-                            <div class="bd-example">
-                                <span class="badge rounded-pill bg-primary">Primary</span>
-                                <span class="badge rounded-pill bg-secondary">Secondary</span>
-                                <span class="badge rounded-pill bg-success">Success</span>
-                                <span class="badge rounded-pill bg-danger">Danger</span>
-                                <span class="badge rounded-pill bg-warning text-dark">Warning</span>
-                                <span class="badge rounded-pill bg-info text-dark">Info</span>
-                                <span class="badge rounded-pill bg-light text-dark">Light</span>
-                                <span class="badge rounded-pill bg-dark">Dark</span>
+                            <div class="bd-example"><span class="badge rounded-pill bg-primary">Primary</span><span class="badge rounded-pill bg-secondary">Secondary</span><span class="badge rounded-pill bg-success">Success</span><span class="badge rounded-pill bg-danger">Danger</span><span class="badge rounded-pill bg-warning text-dark">Warning</span><span class="badge rounded-pill bg-info text-dark">Info</span><span class="badge rounded-pill bg-light text-dark">Light</span><span class="badge rounded-pill bg-dark">Dark</span>
                             </div>
                         </div>
                     </div>
                 </article>
                 <article class="my-3" id="breadcrumb">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Breadcrumb</h3>
-                        <a class="d-flex align-items-center" href="../../components/breadcrumb">Documentation</a>
+                        <h3>Breadcrumb</h3><a class="d-flex align-items-center" href="../components/breadcrumb">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
                             <div class="bd-example">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="#">Home</a>
+                                        <li class="breadcrumb-item">
+                                            <a href="#">Home</a>
                                         </li>
-                                        <li class="breadcrumb-item"><a href="#">Library</a>
+                                        <li class="breadcrumb-item">
+                                            <a href="#">Library</a>
                                         </li>
                                         <li class="breadcrumb-item active" aria-current="page">Data</li>
                                     </ol>
@@ -849,8 +849,7 @@
                 </article>
                 <article class="my-3" id="buttons">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Buttons</h3>
-                        <a class="d-flex align-items-center" href="../../components/buttons">Documentation</a>
+                        <h3>Buttons</h3><a class="d-flex align-items-center" href="../components/buttons">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -889,8 +888,7 @@
                 </article>
                 <article class="my-3" id="button-group">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Button group</h3>
-                        <a class="d-flex align-items-center" href="../../components/button-group">Documentation</a>
+                        <h3>Button group</h3><a class="d-flex align-items-center" href="../components/button-group">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -917,8 +915,7 @@
                 </article>
                 <article class="my-3" id="card">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Card</h3>
-                        <a class="d-flex align-items-center" href="../../components/card">Documentation</a>
+                        <h3>Card</h3><a class="d-flex align-items-center" href="../components/card">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -933,8 +930,7 @@
                                             </svg>
                                             <div class="card-body">
                                                 <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href="#" class="btn btn-primary">Go somewhere</a>
                                             </div>
                                         </div>
                                     </div>
@@ -945,8 +941,7 @@
 </div>
                                             <div class="card-body">
                                                 <h5 class="card-title">Card title</h5>
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a href="#" class="btn btn-primary">Go somewhere</a>
                                             </div>
                                             <div class="card-footer text-muted">
                                                 2 days ago
@@ -964,9 +959,7 @@
                                                 <li class="list-group-item">A second item</li>
                                                 <li class="list-group-item">A third item</li>
                                             </ul>
-                                            <div class="card-body">
-                                                <a href="#" class="card-link">Card link</a>
-                                                <a href="#" class="card-link">Another link</a>
+                                            <div class="card-body"><a href="#" class="card-link">Card link</a><a href="#" class="card-link">Another link</a>
                                             </div>
                                         </div>
                                     </div>
@@ -997,8 +990,7 @@
                 </article>
                 <article class="my-3" id="carousel">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Carousel</h3>
-                        <a class="d-flex align-items-center" href="../../components/carousel">Documentation</a>
+                        <h3>Carousel</h3><a class="d-flex align-items-center" href="../components/carousel">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -1044,13 +1036,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
                                     </button>
                                 </div>
                             </div>
@@ -1059,8 +1047,7 @@
                 </article>
                 <article class="my-3" id="dropdowns">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Dropdowns</h3>
-                        <a class="d-flex align-items-center" href="../../components/dropdowns">Documentation</a>
+                        <h3>Dropdowns</h3><a class="d-flex align-items-center" href="../components/dropdowns">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -1074,16 +1061,20 @@
                                             <li>
                                                 <h6 class="dropdown-header">Dropdown header</h6>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Action</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Action</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Another action</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Another action</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Something else here</a>
                                             </li>
                                             <li>
                                                 <hr class="dropdown-divider"/>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Separated link</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Separated link</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1095,16 +1086,20 @@
                                             <li>
                                                 <h6 class="dropdown-header">Dropdown header</h6>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Action</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Action</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Another action</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Another action</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Something else here</a>
                                             </li>
                                             <li>
                                                 <hr class="dropdown-divider"/>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Separated link</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Separated link</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1116,16 +1111,20 @@
                                             <li>
                                                 <h6 class="dropdown-header">Dropdown header</h6>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Action</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Action</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Another action</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Another action</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Something else here</a>
                                             </li>
                                             <li>
                                                 <hr class="dropdown-divider"/>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Separated link</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Separated link</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1136,90 +1135,102 @@
                             <div class="bd-example">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-primary">Primary</button>
-                                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span class="visually-hidden">Toggle Dropdown</span>
+                                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span>
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Action</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Another action</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Another action</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!-- /btn-group -->
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-secondary">Secondary</button>
-                                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span class="visually-hidden">Toggle Dropdown</span>
+                                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span>
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Action</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Another action</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Another action</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!-- /btn-group -->
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-success">Success</button>
-                                    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span class="visually-hidden">Toggle Dropdown</span>
+                                    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span>
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Action</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Another action</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Another action</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!-- /btn-group -->
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-info">Info</button>
-                                    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span class="visually-hidden">Toggle Dropdown</span>
+                                    <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span>
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Action</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Another action</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Another action</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!-- /btn-group -->
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-warning">Warning</button>
-                                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span class="visually-hidden">Toggle Dropdown</span>
+                                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span>
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Action</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Another action</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Another action</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <!-- /btn-group -->
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-danger">Danger</button>
-                                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-                                        <span class="visually-hidden">Toggle Dropdown</span>
+                                    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span>
                                     </button>
                                     <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Action</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Action</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Another action</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Another action</a>
                                         </li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Something else here</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -1237,16 +1248,20 @@
                                             <li>
                                                 <h6 class="dropdown-header">Dropdown header</h6>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Action</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Action</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Another action</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Another action</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Something else here</a>
                                             </li>
                                             <li>
                                                 <hr class="dropdown-divider"/>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Separated link</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Separated link</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1258,16 +1273,20 @@
                                             <li>
                                                 <h6 class="dropdown-header">Dropdown header</h6>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Action</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Action</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Another action</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Another action</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Something else here</a>
                                             </li>
                                             <li>
                                                 <hr class="dropdown-divider"/>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Separated link</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Separated link</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1279,16 +1298,20 @@
                                             <li>
                                                 <h6 class="dropdown-header">Dropdown header</h6>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Action</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Action</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Another action</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Another action</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Something else here</a>
                                             </li>
                                             <li>
                                                 <hr class="dropdown-divider"/>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Separated link</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Separated link</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1306,14 +1329,17 @@
                                             <li>
                                                 <h6 class="dropdown-header">Dropdown header</h6>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Action</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Action</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Another action</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Another action</a>
                                             </li>
                                             <li>
                                                 <hr class="dropdown-divider"/>
                                             </li>
-                                            <li><a class="dropdown-item" href="#">Separated link</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#">Separated link</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1324,8 +1350,7 @@
                 </article>
                 <article class="my-3" id="list-group">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>List group</h3>
-                        <a class="d-flex align-items-center" href="../../components/list-group">Documentation</a>
+                        <h3>List group</h3><a class="d-flex align-items-center" href="../components/list-group">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -1352,16 +1377,7 @@
                         </div>
                         <div class="bd-example-snippet bd-code-snippet">
                             <div class="bd-example">
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
-                                    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
-                                    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
-                                    <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
-                                    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
-                                    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
-                                    <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
-                                    <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
-                                    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
+                                <div class="list-group"><a href="#" class="list-group-item list-group-item-action">A simple default list group item</a><a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a><a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a><a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a><a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a><a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a><a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a><a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a><a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
                                 </div>
                             </div>
                         </div>
@@ -1369,8 +1385,7 @@
                 </article>
                 <article class="my-3" id="modal">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Modal</h3>
-                        <a class="d-flex align-items-center" href="../../components/modal">Documentation</a>
+                        <h3>Modal</h3><a class="d-flex align-items-center" href="../components/modal">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -1395,17 +1410,12 @@
                 </article>
                 <article class="my-3" id="navs">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Navs</h3>
-                        <a class="d-flex align-items-center" href="../../components/navs-tabs">Documentation</a>
+                        <h3>Navs</h3><a class="d-flex align-items-center" href="../components/navs-tabs">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
                             <div class="bd-example">
-                                <nav class="nav">
-                                    <a class="nav-link active" aria-current="page" href="#">Active</a>
-                                    <a class="nav-link" href="#">Link</a>
-                                    <a class="nav-link" href="#">Link</a>
-                                    <a class="nav-link disabled">Disabled</a>
+                                <nav class="nav"><a class="nav-link active" aria-current="page" href="#">Active</a><a class="nav-link" href="#">Link</a><a class="nav-link" href="#">Link</a><a class="nav-link disabled">Disabled</a>
                                 </nav>
                             </div>
                         </div>
@@ -1434,17 +1444,13 @@
                         <div class="bd-example-snippet bd-code-snippet">
                             <div class="bd-example">
                                 <ul class="nav nav-pills">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Active</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
+                                    <li class="nav-item"><a class="nav-link" href="#">Link</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Link</a>
+                                    <li class="nav-item"><a class="nav-link" href="#">Link</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link disabled">Disabled</a>
+                                    <li class="nav-item"><a class="nav-link disabled">Disabled</a>
                                     </li>
                                 </ul>
                             </div>
@@ -1453,43 +1459,39 @@
                 </article>
                 <article class="my-3" id="navbar">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Navbar</h3>
-                        <a class="d-flex align-items-center" href="../../components/navbar">Documentation</a>
+                        <h3>Navbar</h3><a class="d-flex align-items-center" href="../components/navbar">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
                             <div class="bd-example">
                                 <nav class="navbar navbar-expand-lg bg-light">
-                                    <div class="container-fluid">
-                                        <a class="navbar-brand" href="#"> <img src="../../assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="d-inline-block align-top" alt="Bootstrap" loading="lazy" style="filter: invert(1) grayscale(100%) brightness(200%);"/> </a>
-                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                            <span class="navbar-toggler-icon"></span>
+                                    <div class="container-fluid"><a class="navbar-brand" href="#"> <img src="../assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="d-inline-block align-top" alt="Bootstrap" loading="lazy" style="filter: invert(1) grayscale(100%) brightness(200%);"/> </a>
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
                                         </button>
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                                <li class="nav-item">
-                                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a>
                                                 </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#">Link</a>
+                                                <li class="nav-item"><a class="nav-link" href="#">Link</a>
                                                 </li>
-                                                <li class="nav-item dropdown">
-                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Dropdown </a>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                        <li><a class="dropdown-item" href="#">Action</a>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">Action</a>
                                                         </li>
-                                                        <li><a class="dropdown-item" href="#">Another action</a>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">Another action</a>
                                                         </li>
                                                         <li>
                                                             <hr class="dropdown-divider"/>
                                                         </li>
-                                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">Something else here</a>
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link disabled">Disabled</a>
+                                                <li class="nav-item"><a class="nav-link disabled">Disabled</a>
                                                 </li>
                                             </ul>
                                             <form class="d-flex" role="search">
@@ -1500,36 +1502,33 @@
                                     </div>
                                 </nav>
                                 <nav class="navbar navbar-expand-lg navbar-dark bg-primary mt-5">
-                                    <div class="container-fluid">
-                                        <a class="navbar-brand" href="#"> <img src="../../assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="d-inline-block align-top" alt="Bootstrap" loading="lazy"/> </a>
-                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation">
-                                            <span class="navbar-toggler-icon"></span>
+                                    <div class="container-fluid"><a class="navbar-brand" href="#"> <img src="../assets/brand/bootstrap-logo-white.svg" width="38" height="30" class="d-inline-block align-top" alt="Bootstrap" loading="lazy"/> </a>
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
                                         </button>
                                         <div class="collapse navbar-collapse" id="navbarSupportedContent2">
                                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                                <li class="nav-item">
-                                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a>
                                                 </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#">Link</a>
+                                                <li class="nav-item"><a class="nav-link" href="#">Link</a>
                                                 </li>
-                                                <li class="nav-item dropdown">
-                                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Dropdown </a>
                                                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                                        <li><a class="dropdown-item" href="#">Action</a>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">Action</a>
                                                         </li>
-                                                        <li><a class="dropdown-item" href="#">Another action</a>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">Another action</a>
                                                         </li>
                                                         <li>
                                                             <hr class="dropdown-divider"/>
                                                         </li>
-                                                        <li><a class="dropdown-item" href="#">Something else here</a>
+                                                        <li>
+                                                            <a class="dropdown-item" href="#">Something else here</a>
                                                         </li>
                                                     </ul>
                                                 </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link disabled">Disabled</a>
+                                                <li class="nav-item"><a class="nav-link disabled">Disabled</a>
                                                 </li>
                                             </ul>
                                             <form class="d-flex" role="search">
@@ -1545,20 +1544,20 @@
                 </article>
                 <article class="my-3" id="pagination">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Pagination</h3>
-                        <a class="d-flex align-items-center" href="../../components/pagination">Documentation</a>
+                        <h3>Pagination</h3><a class="d-flex align-items-center" href="../components/pagination">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
                             <div class="bd-example">
                                 <nav aria-label="Pagination example">
                                     <ul class="pagination pagination-sm">
-                                        <li class="page-item"><a class="page-link" href="#">1</a>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">1</a>
                                         </li>
-                                        <li class="page-item active" aria-current="page">
-                                            <a class="page-link" href="#">2</a>
+                                        <li class="page-item active" aria-current="page"><a class="page-link" href="#">2</a>
                                         </li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -1568,17 +1567,18 @@
                             <div class="bd-example">
                                 <nav aria-label="Standard pagination example">
                                     <ul class="pagination">
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                        <li class="page-item"><a class="page-link" href="#" aria-label="Previous"> <span aria-hidden="true">&laquo;</span> </a>
                                         </li>
                                         <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a>
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#" aria-label="Next"> <span aria-hidden="true">&raquo;</span> </a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -1588,18 +1588,17 @@
                             <div class="bd-example">
                                 <nav aria-label="Another pagination example">
                                     <ul class="pagination pagination-lg flex-wrap">
-                                        <li class="page-item disabled">
-                                            <a class="page-link">Previous</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a>
-                                        </li>
-                                        <li class="page-item active" aria-current="page">
-                                            <a class="page-link" href="#">2</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a>
+                                        <li class="page-item disabled"><a class="page-link">Previous</a>
                                         </li>
                                         <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
+                                            <a class="page-link" href="#">1</a>
+                                        </li>
+                                        <li class="page-item active" aria-current="page"><a class="page-link" href="#">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">3</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">Next</a>
                                         </li>
                                     </ul>
                                 </nav>
@@ -1609,8 +1608,7 @@
                 </article>
                 <article class="my-3" id="popovers">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Popovers</h3>
-                        <a class="d-flex align-items-center" href="../../components/popovers">Documentation</a>
+                        <h3>Popovers</h3><a class="d-flex align-items-center" href="../components/popovers">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -1638,8 +1636,7 @@
                 </article>
                 <article class="my-3" id="progress">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Progress</h3>
-                        <a class="d-flex align-items-center" href="../../components/progress">Documentation</a>
+                        <h3>Progress</h3><a class="d-flex align-items-center" href="../components/progress">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -1673,31 +1670,29 @@
                 </article>
                 <article class="my-3" id="scrollspy">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Scrollspy</h3>
-                        <a class="d-flex align-items-center" href="../../components/scrollspy">Documentation</a>
+                        <h3>Scrollspy</h3><a class="d-flex align-items-center" href="../components/scrollspy">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example">
-                            <nav id="navbar-example2" class="navbar bg-light px-3">
-                                <a class="navbar-brand" href="#">Navbar</a>
+                            <nav id="navbar-example2" class="navbar bg-light px-3"><a class="navbar-brand" href="#">Navbar</a>
                                 <ul class="nav nav-pills">
-                                    <li class="nav-item">
-                                        <a class="nav-link active" href="#scrollspyHeading1">First</a>
+                                    <li class="nav-item"><a class="nav-link active" href="#scrollspyHeading1">First</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                                    <li class="nav-item"><a class="nav-link" href="#scrollspyHeading2">Second</a>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                                    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#scrollspyHeading3">Third</a>
                                             </li>
-                                            <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#scrollspyHeading4">Fourth</a>
                                             </li>
                                             <li>
                                                 <hr class="dropdown-divider"/>
                                             </li>
-                                            <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a>
+                                            <li>
+                                                <a class="dropdown-item" href="#scrollspyHeading5">Fifth</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -1720,63 +1715,46 @@
                 </article>
                 <article class="my-3" id="spinners">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Spinners</h3>
-                        <a class="d-flex align-items-center" href="../../components/spinners">Documentation</a>
+                        <h3>Spinners</h3><a class="d-flex align-items-center" href="../components/spinners">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
                             <div class="bd-example">
-                                <div class="spinner-border text-primary" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="spinner-border text-primary" role="status"><span class="visually-hidden">Loading...</span>
                                 </div>
-                                <div class="spinner-border text-secondary" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="spinner-border text-secondary" role="status"><span class="visually-hidden">Loading...</span>
                                 </div>
-                                <div class="spinner-border text-success" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="spinner-border text-success" role="status"><span class="visually-hidden">Loading...</span>
                                 </div>
-                                <div class="spinner-border text-danger" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="spinner-border text-danger" role="status"><span class="visually-hidden">Loading...</span>
                                 </div>
-                                <div class="spinner-border text-warning" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="spinner-border text-warning" role="status"><span class="visually-hidden">Loading...</span>
                                 </div>
-                                <div class="spinner-border text-info" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="spinner-border text-info" role="status"><span class="visually-hidden">Loading...</span>
                                 </div>
-                                <div class="spinner-border text-light" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="spinner-border text-light" role="status"><span class="visually-hidden">Loading...</span>
                                 </div>
-                                <div class="spinner-border text-dark" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="spinner-border text-dark" role="status"><span class="visually-hidden">Loading...</span>
                                 </div>
                             </div>
                         </div>
                         <div class="bd-example-snippet bd-code-snippet">
                             <div class="bd-example">
-                                <div class="spinner-grow text-primary" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="spinner-grow text-primary" role="status"><span class="visually-hidden">Loading...</span>
                                 </div>
-                                <div class="spinner-grow text-secondary" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="spinner-grow text-secondary" role="status"><span class="visually-hidden">Loading...</span>
                                 </div>
-                                <div class="spinner-grow text-success" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="spinner-grow text-success" role="status"><span class="visually-hidden">Loading...</span>
                                 </div>
-                                <div class="spinner-grow text-danger" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="spinner-grow text-danger" role="status"><span class="visually-hidden">Loading...</span>
                                 </div>
-                                <div class="spinner-grow text-warning" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="spinner-grow text-warning" role="status"><span class="visually-hidden">Loading...</span>
                                 </div>
-                                <div class="spinner-grow text-info" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="spinner-grow text-info" role="status"><span class="visually-hidden">Loading...</span>
                                 </div>
-                                <div class="spinner-grow text-light" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="spinner-grow text-light" role="status"><span class="visually-hidden">Loading...</span>
                                 </div>
-                                <div class="spinner-grow text-dark" role="status">
-                                    <span class="visually-hidden">Loading...</span>
+                                <div class="spinner-grow text-dark" role="status"><span class="visually-hidden">Loading...</span>
                                 </div>
                             </div>
                         </div>
@@ -1784,8 +1762,7 @@
                 </article>
                 <article class="my-3" id="toasts">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Toasts</h3>
-                        <a class="d-flex align-items-center" href="../../components/toasts">Documentation</a>
+                        <h3>Toasts</h3><a class="d-flex align-items-center" href="../components/toasts">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -1794,9 +1771,7 @@
                                     <div class="toast-header">
                                         <svg class="bd-placeholder-img rounded me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
                                             <rect width="100%" height="100%" fill="#007aff"/>
-                                        </svg>
-                                        <strong class="me-auto">Bootstrap</strong>
-                                        <small class="text-muted">11 mins ago</small>
+                                        </svg><strong class="me-auto">Bootstrap</strong><small class="text-muted">11 mins ago</small>
                                         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
                                     </div>
                                     <div class="toast-body">
@@ -1809,8 +1784,7 @@
                 </article>
                 <article class="mt-3 mb-5 pb-5" id="tooltips">
                     <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2">
-                        <h3>Tooltips</h3>
-                        <a class="d-flex align-items-center" href="../../components/tooltips">Documentation</a>
+                        <h3>Tooltips</h3><a class="d-flex align-items-center" href="../components/tooltips">Documentation</a>
                     </div>
                     <div>
                         <div class="bd-example-snippet bd-code-snippet">
@@ -1868,8 +1842,46 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.</p>
-                        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                        <p>This is some placeholder content to show the scrolling behavior for modals. We use repeated line breaks to demonstrate how content can exceed minimum inner height, thereby showing inner scrolling. When content becomes longer than the predefined max-height of modal, content will be cropped and scrollable within the modal.</p><br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
                         <p>This content should appear at the bottom after you scroll.</p>
                     </div>
                     <div class="modal-footer">
@@ -1895,7 +1907,7 @@
                 </div>
             </div>
         </div>
-        <script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
         <script src="cheatsheet.js"></script>
     </body>
 </html>
