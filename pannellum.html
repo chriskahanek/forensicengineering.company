@@ -1,27 +1,42 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A simple example</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css"/>
+    <title>FECshare 360 Viewer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
     <style>
-    #panorama {
-        width: 90vw;
-        height: 90vh;
-    }
+        #panorama {
+            width: 90vw;
+            height: 80vh;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
     </style>
 </head>
-<body style="text-align: center;">
 
-<div id="panorama"></div>
-<script>
-pannellum.viewer('panorama', {
-    "type": "equirectangular",
-    "panorama": "R0010059.JPG"
-});
-</script>
+<body style="background-color: #393c40">
+
+    <div id="panorama"></div>
+
+    <script>
+        function getParameter(parameterName) {
+            let param = new URLSearchParams(window.location.search);
+            return param.get(parameterName);
+        }
+
+        pannellum.viewer('panorama', {
+            "type": "equirectangular",
+            "panorama": getParameter("file"),
+            "autoLoad": true,
+            "title": "FEC file: " + getParameter("file")
+        });
+    </script>
 
 </body>
+
 </html>
